@@ -3,5 +3,30 @@
 * {
   padding: 0;
   margin: 0;
-  /* font-family: "Poppins", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  backdrop-filter: blur(8px);
+}
+
+body {
+  height: 3000px;
+}
+
+.home {
+  padding: 150px 0;
+  border-radius: 0 0 200px 0;
+  background-color: #fff;
+}
+
+main {
+  background-color: #009b4c;
+}
+
+.left-content .headline h1 {
+  font-size: 90px;
+  margin: 0;
+  line-height: 78px;
 }
