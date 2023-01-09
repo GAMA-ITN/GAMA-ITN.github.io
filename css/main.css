@@ -49,7 +49,6 @@ body {
     right: 0;
     width: 100vw;
     height: 156px;
-    background-color: #000000;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     -webkit-transition: ease 300ms;
@@ -147,8 +146,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("/img/bg-gradient-dekstop.png");
-  background-position-y: 40vh;
+  background-image: url("/img/bg-gradient-dekstop2.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -157,39 +155,41 @@ body {
 .container .home img {
   margin: 40vh auto;
 }
-.container .parent {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+@media screen and (max-width: 768px) {
+  .container .home img {
+    width: 271px;
+    height: 72px;
+  }
+}
+.container .AboutUs {
+  padding: 12px 64px;
+  margin: 0 auto;
   color: #ffffff;
-  padding: 34px 64px;
 }
-.container .parent .div1 {
-  grid-area: 1/1/2/13;
+.container .AboutUs h1 {
+  font-weight: 700;
 }
-.container .parent .div2 {
-  grid-area: 2/7/3/13;
-  opacity: 100%;
-  padding: 24px 0px;
+.container .AboutUs .content {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.container .parent .div3 {
-  grid-area: 3/7/4/13;
-  opacity: 50%;
-}
-.container .parent .div4 {
-  grid-area: 4/7/5/13;
-  text-align: end;
-  opacity: 25%;
-  cursor: pointer;
-  -webkit-transition: ease 300ms;
-  transition: ease 300ms;
-}
-.container .parent .div4:hover {
-  opacity: 100%;
-}
-.container .parent .div5 {
-  grid-area: 2/1/5/6;
+.container .AboutUs .content img {
+  width: 30vw;
+  height: 25vw;
   background-color: #ffffff;
+}
+.container .AboutUs .content .text-content {
+  width: 50vw;
+}
+.container .AboutUs .content .text-content p {
+  padding: 8px 0;
+  text-align: justify;
+}
+.container .AboutUs .content .text-content p.more {
+  text-align: end;
 }/*# sourceMappingURL=main.css.map */
